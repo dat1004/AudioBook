@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Baloo 2";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #3aaf9f;
+}
+
+.register-form {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 60px 45px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border-radius: 20px;
+}
+
+.close {
+  background: none;
+  position: absolute;
+  left: 380px;
+  opacity: 0.3;
+}
+.close:hover {
+  background: none;
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  content: " ";
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.register-form h1 {
+  text-align: center;
+  color: #5379ff;
+  background: none;
+}
+
+.register-form > * {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #888888;
+}
+
+.register-form .tickbox {
+  background: none;
+  font-size: 12px;
+  color: #4f4f4f;
+}
+
+.register-form .register-btn {
+  width: 70%;
+  background: #5379ff;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+.register-form .footer {
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  margin: 0;
+}
+
+.input-wrapper .input-main {
+  padding: 10px;
+  width: 100%;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-wrapper .input-error {
+  font-size: 12px;
+  color: #dd5347;
+}
