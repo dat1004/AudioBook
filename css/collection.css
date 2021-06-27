@@ -63,24 +63,35 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
   align-items: center;
   opacity: 0;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .porfolio .item:hover .action {
   opacity: 1;
 }
 
+.porfolio .item .action .stats > * {
+  color: #fff;
+  text-decoration: none;
+}
+
+.porfolio .item .action .stats i {
+  margin: 10px;
+}
+
 .porfolio .item .action a {
   display: inline-block;
   color: white;
-  text-decoration: none;
   border: 1px solid white;
-  padding: 5px 15px;
+  padding: 5px 30px;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 @media (max-width: 1068px) {
