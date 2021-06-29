@@ -83,3 +83,7 @@ p {
 .heart-count i {
   margin: 10px;
 }
+
+.tool-bar i:hover {
+  cursor: pointer;
+}
