@@ -59,7 +59,7 @@ p {
 }
 
 .comic-content img {
-  max-width: min-content;
+  max-width: 70%;
 }
 
 .footer {
@@ -86,4 +86,61 @@ p {
 
 .tool-bar i:hover {
   cursor: pointer;
+}
+
+#volume {
+  width: 200px;
+  height: 40px;
+  position: relative;
+}
+
+#vol-down,
+#slider,
+#vol-up {
+  position: absolute;
+}
+
+#vol-down {
+  margin-left: -16px;
+  left: 0;
+}
+
+#vol-up {
+  right: 0;
+}
+
+#slider {
+  -webkit-appearance: none;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  background: #555;
+  height: 5px;
+  width: 160px;
+  border-radius: 15px;
+  margin: 8px;
+}
+
+#slider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #5379ff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #5379ff;
+  cursor: pointer;
+  border-radius: 10px;
 }
