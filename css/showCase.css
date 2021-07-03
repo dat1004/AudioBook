@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Baloo 2";
-  color: #111;
+  color: #fff;
 }
 
 h1 {
@@ -17,6 +17,14 @@ h1 {
 p {
   margin: 20px 0px 10px;
   font-size: 1.1rem;
+}
+
+.music-info {
+}
+
+.music-info h4 {
+  font-size: 1.1rem;
+  color: #5379ff;
 }
 
 .logo {
@@ -34,22 +42,32 @@ p {
   top: 140px;
   left: 200px;
   font-size: 1.5rem;
+  color: #444;
 }
 
-.back-btn i {
+.back-btn i,
+.back-text {
   margin: 10px;
+  color: #444;
 }
 
 .back-btn:hover {
   cursor: pointer;
 }
 
-.container {
+.audio-container {
   position: relative;
   top: 200px;
-  left: 200px;
-  width: 80%;
+  left: 100px;
+  width: 90%;
   height: auto;
+}
+
+.audio-container.play {
+}
+.audio-container.mute {
+}
+.audio-container.full-screen {
 }
 
 .comic-content {
@@ -64,7 +82,12 @@ p {
 
 .footer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 40% 40%;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background: #444;
+  border-radius: 10px;
 }
 
 .stats {
@@ -77,6 +100,7 @@ p {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .view-count i,
@@ -84,29 +108,41 @@ p {
   margin: 10px;
 }
 
+.tool-bar button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #5379ff;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
 .tool-bar i:hover {
   cursor: pointer;
 }
 
 #volume {
-  width: 200px;
-  height: 40px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
-#vol-down,
-#slider,
 #vol-up {
-  position: absolute;
-}
-
-#vol-down {
-  margin-left: -16px;
   left: 0;
-}
-
-#vol-up {
-  right: 0;
 }
 
 #slider {
@@ -115,7 +151,7 @@ p {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
-  background: #555;
+  background: #777;
   height: 5px;
   width: 160px;
   border-radius: 15px;
