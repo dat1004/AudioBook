@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Flip Animation</title>
+  </head>
+  <body>
+    <div class="comic-container">
+      <div class="page" id="first">
+        <div class="back">
+          <div class="outer">
+            <div class="content">
+              <img
+                src="https://tympanus.net/Development/BookBlock/images/demo1/1.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="second">
+        <div class="front">
+          <div class="outer">
+            <div class="content">
+              <img
+                src="https://tympanus.net/Development/BookBlock/images/demo1/1.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="back" id="third">
+          <div class="outer">
+            <div class="content">
+              <div class="helper-class-to-make-bug-visbile">
+                <img
+                  src="https://tympanus.net/Development/BookBlock/images/demo1/2.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="fourth">
+        <div class="front">
+          <div class="outer">
+            <div class="content">
+              <img
+                src="https://tympanus.net/Development/BookBlock/images/demo1/2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="prev"></div>
+      <div id="next"></div>
+    </div>
+
+    <script src="flip.js"></script>
+  </body>
+</html>
