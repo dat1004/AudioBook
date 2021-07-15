@@ -153,3 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 });
+
+//volume control
+function outputUpdate(vol) {
+  document.querySelector("#volumeValue").value = vol;
+}

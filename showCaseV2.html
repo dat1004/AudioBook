@@ -84,11 +84,13 @@
             <input
               type="range"
               id="slider"
-              step="0.5"
-              value="5"
-              min="1"
-              max="10"
+              step="1"
+              value="50"
+              min="0"
+              max="100"
+              onchange="outputUpdate(value)"
             />
+            <output for="fader" id="volumeValue">50</output>
           </button>
         </div>
 

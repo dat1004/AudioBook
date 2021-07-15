@@ -289,6 +289,12 @@ body {
   transition: 1s;
 }
 
+#volume:hover #volumeValue {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
 #slider {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -299,4 +305,15 @@ body {
   bottom: 100px;
   left: -50px;
   transform: rotate(-90deg);
+}
+
+#volumeValue {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  visibility: hidden;
+  transition: 1s;
+  position: absolute;
+  bottom: 100px;
+  left: -30px;
 }
