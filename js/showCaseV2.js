@@ -7,6 +7,7 @@ const title = document.querySelector("#title");
 const audio = document.querySelector("#audio");
 const progress = document.querySelector(".progress");
 const progressContainer = document.querySelector(".progress-container");
+const volSlider = document.getElementById("slider");
 
 //Song Titles
 const songs = ["hey", "summer", "ukulele"];
@@ -158,3 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function outputUpdate(vol) {
   document.querySelector("#volumeValue").value = vol;
 }
+
+volSlider.addEventListener("change", function (e) {
+  audio.volume = e.currentTarget.value / 100;
+});
